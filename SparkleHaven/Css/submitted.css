@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+#innerdiv {
+    background-color: rgba(128, 128, 128, 0.301);
+    width: 740px;
+    height: 390px;
+    position: absolute;
+    top: 100px;
+    left: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#site-name {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-left: 50px;
+}
+
+#info {
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    text-align: center;
+}
+
+em {
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: larger;
+    font-weight: 900;
+    position: absolute;
+    top: -18px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+#homepage {
+    background-color: blue;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+}
+
+#homepage:hover {
+    background-color: white;
+    color: blue;
+    border: 1px solid;
+}
+
+#homepage:active {
+    background-color: blue;
+    color: white;
+}
+
+/* media query for responsiveness across smaller devices */
+
+@media  screen and (max-width: 600px)  
+{
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    div {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #innerdiv {
+        background-color: rgba(128, 128, 128, 0.301);
+        width: 100%;
+        height: 390px;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    #site-name {
+        font-size: 18px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin-left: 5px;
+    }
+
+    h3 {
+        font-size: large;
+        font-weight: 900;
+        position: absolute;
+        top: 20px;
+        text-decoration: underline;
+        text-decoration-style: solid;
+    }
+
+    #info {
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+        top: 70px;
+        text-align: center;
+    }
+
+    #homepage {
+        position: absolute;
+        top: 280px;
+        left: 115px;
+        background-color: blue;
+        color: white;
+        width: 150px;
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+    }
+}
+
+/* media query for responsiveness across larger devices */
+
+@media screen and (max-width: 900px) and (min-width: 600px) 
+{
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    div {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    #innerdiv {
+        background-color: rgba(128, 128, 128, 0.301);
+        width: 740px;
+        height: 390px;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    
+    #site-name {
+        font-size: 18px;
+        position: absolute;
+        top: 5px;
+        left: 50px;
+        margin-left: 5px;
+    }
+    
+    #info {
+        font-weight: bold;
+        position: absolute;
+        top: 30px;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: larger;
+        font-weight: 900;
+        position: absolute;
+        top: -18px;
+        text-decoration: underline;
+        text-decoration-style: solid;
+    }
+    
+    #homepage {
+        background-color: blue;
+        color: white;
+        width: 150px;
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+    }
+    
+}

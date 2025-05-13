@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* styling of the main div */
+
+div {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* styling of secondary div */
+
+#innerdiv {
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    top: 160px;
+    left: 70px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+/* styling of paragraph tags  */
+
+#info {
+    font-weight: bold;
+    position: absolute;
+}
+
+/* website name styling */
+
+#site-name {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-left: 50px;
+}
+
+em {
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+/* navigation bar styling  with hover effects*/
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 17px;
+    display: inline;
+    margin: 15px;
+    position: relative;
+    top: 7px;
+    left: 430px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: rgba(0, 0, 0, 0.484);
+    text-decoration: underline blue;
+
+    transition: all 0.5s ease-in;
+}
+
+/* links styling  */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* text decoration used to determine the current page */
+
+#current {
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 3px;
+}
+
+/* image styling and positioning */
+
+#img1 {
+    width: 700px;
+    position: absolute;
+    right: 50px;
+    top: 90px;
+}
+
+/* media query for responsiveness across smaller devices */
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    div {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #innerdiv {
+        width: 98%;
+        height: 270px;
+        position: absolute;
+        top: 160px;
+        left: 5px;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #site-name {
+        font-size: 18px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin-left: 5px;
+    }
+
+    #info {
+        font-size: 14px;
+        font-weight: bolder;
+        position: absolute;
+    }
+
+    ul li {
+        font-size: 13px;
+        display: inline;
+        margin: 15px;
+        position: relative;
+        top: 55px;
+        left: -15px;
+        cursor: pointer;
+    }
+
+    #img1 {
+        position: absolute;
+        left: 0px;
+        top: 440px;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+
+    }
+}
+
+/* media query for responsiveness across larger devices */
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    div {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #innerdiv {
+        width: 500px;
+        height: 350px;
+        position: absolute;
+        top: 130px;
+        left: 150px;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #info {
+        font-weight: bold;
+        position: absolute;
+        text-align: center;
+    }
+
+    #site-name {
+        font-size: 18px;
+        position: absolute;
+        top: 5px;
+        left: 50px;
+        margin-left: 5px;
+    }
+
+    ul li {
+        font-size: 15px;
+        display: inline;
+        margin: 15px;
+        position: relative;
+        top: 7px;
+        left: 350px;
+        cursor: pointer;
+    }
+
+    #img1 {
+        width: 700px;
+        position: absolute;
+        right: 50px;
+        top: 390px;
+    }
+}
